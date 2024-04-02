@@ -45,4 +45,13 @@ From the analysis:
 
 
 
+### Correlation Analysis of Water Quality Factors
 
+To understand the relationships between different factors affecting water quality, a correlation analysis was conducted and visualized using a heatmap.
+![Heatmap](sc/correlationCompare.png)
+#### Insights:
+The heatmap revealed the following insights:
+- **Weak Correlations**: Some weak correlations were observed, such as sulfate with solids and sulfate with hardness. However, these correlations were not significant.
+- **Overall Low Correlation**: Generally, there is a lack of strong correlation between the analyzed factors. This suggests that the factors may influence water quality independently and are not strongly dependent on each other.
+
+This correlation analysis provides valuable insights into the interplay between different factors affecting water quality. Understanding these relationships is crucial for effective water management and quality assessment.
