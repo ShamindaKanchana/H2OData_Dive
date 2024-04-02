@@ -19,3 +19,14 @@ While the dataset is not first-party data, steps were taken to ensure its validi
 - **Data Exploration and Validation**: Prior to analysis, exploratory data analysis (EDA) was conducted to inspect the dataset for anomalies, inconsistencies, or irregularities. Data validation techniques were applied to ensure data integrity and accuracy.
 
 Based on the above factors, it can be concluded that the dataset is reliable and suitable for analysis in the context of this project. While it is not first-party data, the steps taken to validate the dataset instill confidence in its usability and integrity.
+
+
+## Data Processing Phase
+
+### Handling Null Values
+Null values present in the dataset were removed to ensure data integrity and accuracy. Various techniques, such as imputation or deletion, were employed based on the nature and distribution of missing data.
+
+### Standardizing Float Values
+Float values in the dataset were standardized to have two decimal places for consistency and ease of interpretation. This involved rounding off or truncating decimal values as appropriate.
+
+
