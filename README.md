@@ -5,7 +5,7 @@ Explore portable water quality data for insights into pH, hardness, chloramines,
 ## Dataset Preparation
 
 ### Source of the Dataset
-The dataset used in this project was obtained from Kaggle, a platform for data science and machine learning enthusiasts. The dataset specifically focuses on [add a brief description of the dataset, e.g., "drinking water quality"]. You can find the original dataset [here](link-to-the-dataset).
+The dataset used in this project was obtained from Kaggle, a platform for data science and machine learning enthusiasts. The dataset specifically focuses on [add a brief description of the dataset, e.g., "drinking water quality"]. You can find the original dataset [here](https://www.kaggle.com/datasets/adityakadiwal/water-potability).
 
 ### Data Validation
 While the dataset is not first-party data, steps were taken to ensure its validity and reliability. Several factors contribute to the confidence in the dataset:
