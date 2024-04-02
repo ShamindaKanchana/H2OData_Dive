@@ -55,3 +55,24 @@ The heatmap revealed the following insights:
 - **Overall Low Correlation**: Generally, there is a lack of strong correlation between the analyzed factors. This suggests that the factors may influence water quality independently and are not strongly dependent on each other.
 
 This correlation analysis provides valuable insights into the interplay between different factors affecting water quality. Understanding these relationships is crucial for effective water management and quality assessment.
+
+### Water Hardness Classification
+
+The water hardness classification was analyzed to understand the distribution of water samples across different hardness categories. It's important to note that the categories used in the analysis were derived from scientific sources related to water quality, as they were not explicitly included in the dataset.
+
+![Heatmap](sc/hardnessPie.png)
+#### Insights:
+- **Hardness Range**: The hardness of water samples in the dataset varied between approximately 100 to 300 units.
+- **Distribution of Hardness Categories**:
+  - **Hard**: More than 91% of the water samples were classified as hard.
+  - **Moderately Hard**: Approximately 7.9% of the water samples fell into the moderately hard category.
+  - **Very Hard**: A small percentage (0.1%) of water samples were categorized as very hard.
+  - **Soft**: No water samples were classified as soft in the dataset.
+
+### Additional Information:
+- The hardness categories used in the analysis were based on classifications from scientific sources related to water quality assessment.
+- Utilize a bar chart or pie chart to visually represent the distribution of water hardness categories for better understanding.
+- Provide clear labels and percentages on the chart to illustrate the proportion of samples in each category.
+
+This analysis provides valuable insights into the prevalence of different water hardness categories in the dataset, derived from scientifically established classifications. These findings contribute to a better understanding of water quality assessment and treatment strategies.
+
