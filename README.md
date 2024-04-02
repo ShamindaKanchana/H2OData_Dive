@@ -30,3 +30,19 @@ Null values present in the dataset were removed to ensure data integrity and acc
 Float values in the dataset were standardized to have two decimal places for consistency and ease of interpretation. This involved rounding off or truncating decimal values as appropriate.
 
 
+## Analysis Phase
+
+### Potability of Water Samples
+
+To assess the potability of water samples in the dataset, a pie chart was prepared to visualize the percentage of samples suitable for drinking versus those unsuitable for drinking.
+
+![Pie Chart](sc/potabilityPie.png)
+
+#### Results:
+From the analysis:
+- **40.3%** of the water samples are suitable for drinking.
+- **59.7%** of the water samples are unsuitable for drinking.
+
+
+
+
