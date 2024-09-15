@@ -76,3 +76,27 @@ The water hardness classification was analyzed to understand the distribution of
 
 This analysis provides valuable insights into the prevalence of different water hardness categories in the dataset, derived from scientifically established classifications. These findings contribute to a better understanding of water quality assessment and treatment strategies.
 
+
+
+
+## Data Preprocessing further
+
+### Outlier Detection and Handling
+
+To ensure the accuracy and reliability of the regression analysis, several preprocessing steps were undertaken to address outliers in the dataset:
+
+- **Outlier Detection**: Outliers were initially identified using boxplots. Boxplots provide a visual representation of the distribution of data and help in identifying extreme values that deviate significantly from the rest of the data.
+
+- **Outlier Handling Using IQR Method**: 
+  - **Interquartile Range (IQR)**: The IQR method was employed to detect outliers. The IQR is calculated as the difference between the first quartile (Q1) and the third quartile (Q3) of the dataset. 
+  - **Capping Outliers**: Instead of removing outliers, which can lead to data loss, the values were capped. This approach involves setting upper and lower bounds based on the IQR, ensuring that any value beyond these bounds is adjusted to the nearest boundary value.
+
+### Feature Scaling
+
+After handling outliers, feature scaling was performed to ensure that all variables contribute equally to the regression analysis:
+
+- **Standardization**: Standardization was applied to scale features to have a mean of 0 and a standard deviation of 1. This process helps in normalizing the data and ensures that features with larger ranges do not disproportionately affect the model.
+
+- **Min-Max Scaling**: Min-Max scaling was used to transform features to a range between 0 and 1. This is particularly useful when the dataset has features with different units and magnitudes.
+
+By implementing these preprocessing techniques, the dataset was prepared for more accurate and effective regression analysis, reducing the impact of outliers and ensuring consistent scaling across features.
