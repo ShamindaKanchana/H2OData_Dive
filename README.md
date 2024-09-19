@@ -114,3 +114,17 @@ After handling outliers, feature scaling was performed to ensure that all variab
 
 By implementing these preprocessing techniques, the dataset was prepared for more accurate and effective regression analysis, reducing the impact of outliers and ensuring consistent scaling across features.
 
+
+## Model Selection 
+
+### Logistic Regression
+
+#### Initial Experiment with All Features
+To begin model training, logistic regression was applied to 75% of the dataset, leaving the remaining 25% for testing. Initially, all features from the dataset were selected to train the model. Based on the correlations observed from a heatmap analysis, it was evident that several factors influenced the water potability, but not all had strong correlations.
+
+Using all the features to train the logistic regression model resulted in an accuracy of approximately 60%. Although this provided a baseline understanding, the model's performance was not optimal due to the inclusion of less correlated features.
+
+#### Feature Selection: Focusing on 'Solids'
+Upon further analysis, it was found that the feature "Solids" had a higher correlation with water potability compared to other factors. When the logistic regression model was trained using only this feature, the accuracy improved slightly to 61.6%.
+
+This experiment demonstrated that selecting key features, such as "Solids," led to better performance with logistic regression, highlighting the importance of feature selection in improving model accuracy.
