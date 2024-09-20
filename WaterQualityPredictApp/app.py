@@ -1,18 +1,17 @@
 from flask import Flask, request, render_template
 import numpy as np
 import pandas as pd
-from sklearn.preprocessing import StandardScaler
+
 from sklearn.ensemble import RandomForestClassifier
 import joblib
 rf = joblib.load('./Notebook/random_forest_model.pkl')
-import joblib
-scale_sandard = joblib.load('./Notebook/scaler.pkl')
+
+
 
 app = Flask(__name__)
 
 
-rf= RandomForestClassifier() 
-scale_sandard = StandardScaler()           
+
 
 # Function to predict water potability
 def predict_water_potability(input_features):
@@ -22,11 +21,10 @@ def predict_water_potability(input_features):
     
     input_df = pd.DataFrame([input_features], columns=features_order)
     
-    # Scale the input features using the same scaler used during training
-    scaled_input = scale_sandard.transform(input_df)
-    scaled_input_df = pd.DataFrame(scaled_input, columns=features_order)
+    
+  
     # Predict using the trained Random Forest model
-    prediction = rf.predict(scaled_input_df)
+    prediction = rf.predict(input_df)
     
     # Return whether the water is potable (1) or not (0)
     return 'Portable' if prediction[0] == 1 else 'Not Portable'
