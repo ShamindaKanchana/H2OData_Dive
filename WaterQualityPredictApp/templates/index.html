@@ -12,7 +12,7 @@
             background-image: url('https://static.vecteezy.com/system/resources/previews/028/635/222/large_2x/water-or-oil-drop-on-blue-background-isolated-water-drop-with-small-droplets-world-water-day-generative-ai-photo.jpg'); /* Water-themed background */
             background-size: cover;
             background-position: center;
-            height: 100vh;
+            height: 130vh;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -48,53 +48,61 @@
         <form action="/predict" method="post">
             <div class="mb-3">
                 <label for="ph" class="form-label">pH:</label>
-                <input type="text" id="ph" name="ph" class="form-control" required>
+                <input type="text" id="ph" name="ph" placeholder="Enter pH value" class="form-control" required>
             </div>
 
             <div class="mb-3">
                 <label for="Hardness" class="form-label">Hardness:</label>
-                <input type="text" id="Hardness" name="Hardness" class="form-control" required>
+                <input type="text" id="Hardness" name="Hardness"  placeholder="Enter Hardness value in mg/L " class="form-control" required>
             </div>
 
             <div class="mb-3">
                 <label for="Solids" class="form-label">Solids:</label>
-                <input type="text" id="Solids" name="Solids" class="form-control" required>
+                <input type="text" id="Solids" name="Solids" placeholder="Enter Solids value in ppm" class="form-control" required>
             </div>
 
             <div class="mb-3">
                 <label for="Chloramines" class="form-label">Chloramines:</label>
-                <input type="text" id="Chloramines" name="Chloramines" class="form-control" required>
+                <input type="text" id="Chloramines" name="Chloramines" placeholder="Enter Chloramines value in ppm"  class="form-control" required>
             </div>
 
             <div class="mb-3">
                 <label for="Sulfate" class="form-label">Sulfate:</label>
-                <input type="text" id="Sulfate" name="Sulfate" class="form-control" required>
+                <input type="text" id="Sulfate" name="Sulfate"  placeholder="Enter  Sulfate value in mg/L" class="form-control" required>
             </div>
 
             <div class="mb-3">
                 <label for="Conductivity" class="form-label">Conductivity:</label>
-                <input type="text" id="Conductivity" name="Conductivity" class="form-control" required>
+                <input type="text" id="Conductivity" name="Conductivity" placeholder="Enter Conductivity value in miu/cm" class="form-control" required>
             </div>
 
             <div class="mb-3">
                 <label for="Organic_carbon" class="form-label">Organic Carbon:</label>
-                <input type="text" id="Organic_carbon" name="Organic_carbon" class="form-control" required>
+                <input type="text" id="Organic_carbon" name="Organic_carbon" placeholder="Enter Organic_carbon value in ppm" class="form-control" required>
             </div>
 
             <div class="mb-3">
                 <label for="Trihalomethanes" class="form-label">Trihalomethanes:</label>
-                <input type="text" id="Trihalomethanes" name="Trihalomethanes" class="form-control" required>
+                <input type="text" id="Trihalomethanes" name="Trihalomethanes" placeholder="Enter Trihalomethanes value in miu g/L" class="form-control" required>
             </div>
 
             <div class="mb-3">
                 <label for="Turbidity" class="form-label">Turbidity:</label>
-                <input type="text" id="Turbidity" name="Turbidity" class="form-control" required>
+                <input type="text" id="Turbidity" name="Turbidity" placeholder="Enter Turbility value in  in NTU"  class="form-control" required>
             </div>
 
             <button type="submit" class="btn btn-primary">Predict</button>
+          
         </form>
+        
+        <footer style="margin-top: 50px; text-align: center; color: white;">
+            <p><strong>Note:</strong> The predictions provided by this app are based on machine learning models and may not be 100% accurate. Efforts will be made to enhance the accuracy in future updates. Stay tuned for improvements!</p>
+            <p>App built by <strong>Shaminda</strong> in collaboration with <strong>ChatGPT</strong>.</p>
+            <p>&copy; 2024 Water Potability Prediction</p>
+        </footer> 
     </div>
-
+    
+   
     <!-- Bootstrap JS for interactivity -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
