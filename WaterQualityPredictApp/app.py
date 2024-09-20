@@ -8,18 +8,18 @@ app = Flask(__name__)
 
 
 rf= RandomForestClassifier() 
-scale_standard = StandardScaler()           
+scale_sandard = StandardScaler()           
 
 # Function to predict water potability
 def predict_water_potability(input_features):
     features_order = ['ph', 'Hardness', 'Solids', 'Chloramines', 'Sulfate', 
                       'Conductivity', 'Organic_carbon', 'Trihalomethanes', 'Turbidity']
     
-   
+    
     input_df = pd.DataFrame([input_features], columns=features_order)
     
     # Scale the input features using the same scaler used during training
-    scaled_input = scale_standard.transform(input_df)
+    scaled_input = scale_sandard.transform(input_df)
     scaled_input_df = pd.DataFrame(scaled_input, columns=features_order)
     # Predict using the trained Random Forest model
     prediction = rf.predict(scaled_input_df)
@@ -50,7 +50,7 @@ def predict():
     
     # Predict water potability
     result = predict_water_potability(features)
-    
+    #result="THis is the result"
     return render_template('result.html', result=result)
 
 if __name__ == '__main__':
