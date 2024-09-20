@@ -180,3 +180,14 @@ The model is trained using the **RandomForestClassifier**, which is known for it
 
    # Train the model
    rf.fit(X_train, y_train)
+   ```  
+
+## Flask App Structure
+- `app.py:` Contains the main Flask application code that handles form inputs and predicts water potability using the trained model.
+- `templates/:` Contains the HTML files (`index.html, result.html`) for the user interface.
+- `Notebook/:` Contains the saved machine learning model and scaler files (random_forest_model.pkl, scaler.pkl).
+
+## Flask App Prediction Function
+The prediction function takes the input water quality features and predicts water potability using the RandomForestClassifier:
+
+
