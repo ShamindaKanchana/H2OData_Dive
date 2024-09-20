@@ -136,3 +136,47 @@ Following the logistic regression experiments, I used a Random Forest Classifier
 Next, I experimented by selecting only a few key features, including "Solids," which had shown the highest correlation with water potability in the logistic regression model. However, unlike logistic regression, the accuracy decreased when fewer features were used in the Random Forest model. Specifically, when only the "Solids" feature was selected, the accuracy dropped to 50.49%, exhibiting an opposite behavior to the logistic regression model.
 
 This result highlights the difference between the two algorithms—while logistic regression performed better with feature selection, Random Forest achieved higher accuracy by utilizing a broader set of features. Overall, the Random Forest Classifier outperformed logistic regression, delivering better results for this dataset.
+
+
+
+# Water Potability Prediction App
+
+This project implements a Flask web application that predicts whether water is **potable** (safe to drink) or **not potable** based on various water quality features. The app uses a **RandomForestClassifier** for the prediction model.
+
+## Overview
+The web app allows users to input water quality parameters, and based on the provided inputs, it predicts whether the water is drinkable or not. The app uses machine learning (Random Forest) for the classification task, providing reliable predictions for water quality assessment.
+
+## Technologies Used
+- **Flask**: A lightweight web framework for serving the app.
+- **Scikit-Learn**: For machine learning model and data preprocessing.
+- **Pandas & NumPy**: For data manipulation and transformation.
+- **HTML/CSS**: For the user interface (UI) structure (UI will be enhanced in future updates).
+
+## Water Quality Features
+The following features are used for prediction:
+- **ph**: Acidity of the water.
+- **Hardness**: The amount of calcium and magnesium in water.
+- **Solids**: Total dissolved solids.
+- **Chloramines**: Chlorine content used for disinfection.
+- **Sulfate**: Amount of sulfate in the water.
+- **Conductivity**: Electrical conductivity of the water.
+- **Organic Carbon**: Organic pollutants.
+- **Trihalomethanes**: Chemical compounds that can form in water.
+- **Turbidity**: Cloudiness of the water.
+
+## Model Training
+The model is trained using the **RandomForestClassifier**, which is known for its accuracy and ability to handle large datasets without overfitting. The key steps are:
+
+1. **Training the Random Forest Classifier:**
+   ```python
+   from sklearn.ensemble import RandomForestClassifier
+   from sklearn.model_selection import train_test_split
+
+   # Assume data is loaded into X (features) and y (target)
+   X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
+
+   # Initialize the RandomForestClassifier
+   rf = RandomForestClassifier(n_estimators=50)
+
+   # Train the model
+   rf.fit(X_train, y_train)
