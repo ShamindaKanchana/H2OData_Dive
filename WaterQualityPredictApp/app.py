@@ -3,6 +3,10 @@ import numpy as np
 import pandas as pd
 from sklearn.preprocessing import StandardScaler
 from sklearn.ensemble import RandomForestClassifier
+import joblib
+rf = joblib.load('./Notebook/random_forest_model.pkl')
+import joblib
+scale_sandard = joblib.load('./Notebook/scaler.pkl')
 
 app = Flask(__name__)
 
