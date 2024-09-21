@@ -131,7 +131,7 @@ This experiment demonstrated that selecting key features, such as "Solids," led 
 
 ### Random Forest Classifier
 
-Following the logistic regression experiments, I used a Random Forest Classifier to train and test the dataset. Similar to the previous approach, I initially trained the model using all features, resulting in an accuracy of 68.19%, which was a significant improvement compared to logistic regression.
+Following the logistic regression experiments, I used a Random Forest Classifier to train and test the dataset. Similar to the previous approach, I initially trained the model using all features, resulting in an accuracy of 69%, which was a significant improvement compared to logistic regression.
 
 Next, I experimented by selecting only a few key features, including "Solids," which had shown the highest correlation with water potability in the logistic regression model. However, unlike logistic regression, the accuracy decreased when fewer features were used in the Random Forest model. Specifically, when only the "Solids" feature was selected, the accuracy dropped to 50.49%, exhibiting an opposite behavior to the logistic regression model.
 
